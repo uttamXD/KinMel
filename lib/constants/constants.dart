@@ -9,17 +9,17 @@ class Constant {
   static const lHeight = SizedBox(
     height: 400,
   );
-  final lWidth = const SizedBox(
+  static const lWidth =  SizedBox(
     width: 40,
   );
 
 //medium sizedBox
-  final mHeight = const SizedBox(
+  static const mHeight =  SizedBox(
     height: 20,
   );
-  final mWidth = const SizedBox(width: 20);
+  static const mWidth =  SizedBox(width: 20);
 
 //small sizedBox
-  final sHeight = const SizedBox(height: 10);
-  final sWidth = const SizedBox(width: 10);
+  static const sHeight =  SizedBox(height: 10);
+  static const sWidth =  SizedBox(width: 10);
 }
