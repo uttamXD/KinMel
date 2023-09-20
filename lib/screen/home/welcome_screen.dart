@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_kin_bech/app/app_routes.dart';
 import 'package:project_kin_bech/constants/color_theme.dart';
+import 'package:project_kin_bech/constants/text_theme.dart';
 
 class WelcomScreen extends StatelessWidget {
   const WelcomScreen({super.key});
@@ -12,14 +13,11 @@ class WelcomScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Expanded(
+           Expanded(
             child: Center(
               child: Text(
                 "Welcome to KinMel !!!",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25,
-                    color: Colors.redAccent),
+                style: titleText,
               ),
             ),
           ),
@@ -35,9 +33,9 @@ class WelcomScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, AppRoutes.home);
               },
-              child: const Text(
+              child:  Text(
                 "Get Started",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                style: titleText,
               ),
             ),
           ),
